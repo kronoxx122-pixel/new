@@ -5,51 +5,35 @@
       "use": "vercel-php@0.7.3"
     },
     {
-      "src": "**/*.css",
+      "src": "css/**",
       "use": "@vercel/static"
     },
     {
-      "src": "**/*.js",
+      "src": "js/**",
       "use": "@vercel/static"
     },
     {
-      "src": "**/*.html",
+      "src": "assets/**",
       "use": "@vercel/static"
     },
     {
-      "src": "**/*.png",
+      "src": "access-passed/css/**",
       "use": "@vercel/static"
     },
     {
-      "src": "**/*.jpg",
+      "src": "access-passed/js/**",
       "use": "@vercel/static"
     },
     {
-      "src": "**/*.svg",
+      "src": "access-passed/assets/**",
       "use": "@vercel/static"
     },
     {
-      "src": "**/*.webp",
+      "src": "access-passed/*.html",
       "use": "@vercel/static"
     },
     {
-      "src": "**/*.ico",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "**/*.gif",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "**/*.woff",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "**/*.woff2",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "**/*.ttf",
+      "src": "*.html",
       "use": "@vercel/static"
     }
   ]

